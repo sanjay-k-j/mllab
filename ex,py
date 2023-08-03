@@ -1,0 +1,32 @@
+import pandas as pd
+import numpy as np
+inputNeurons = 2
+input = np.random.randint(1,10,size=(1,inputNeurons))
+print(input)
+
+
+# # Sample DataFrame
+# data = {
+#     'Category': ['A', 'B', 'A', 'B', 'A', 'B'],
+#     'Value': [10, 20, 15, 25, 30, 35]
+# }
+# df = pd.DataFrame(data)
+
+# # Grouping the DataFrame by the 'Category' column
+# grouped = df.groupby('Category')
+
+# # Performing aggregation on each group
+# print(grouped.sum())
+# print(grouped.mean())
+# print(grouped.max())
+
+# # Iterating over groups
+# for name, group in grouped:
+#     print(f"Group: {name}")
+#     print(group)
+
+# # Applying custom aggregation function
+# def custom_agg(x):
+#     return x.sum() - x.min()
+
+# print(grouped['Value'].apply(custom_agg))
